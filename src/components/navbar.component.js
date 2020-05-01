@@ -6,7 +6,7 @@ import { MDBNavbar,
        MDBNavLink, MDBNavbarToggler,
         MDBCollapse, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
-import './nav.css'
+import Styles from './nav.module.css'
 
 
 class NavbarPage extends Component {
@@ -26,7 +26,7 @@ clickHandler() {
 render() {
   return (
     <Router>
-      <MDBNavbar className="Horizon" dark expand="md">
+      <MDBNavbar className={Styles.Horizon} dark expand="md">
         <MDBNavbarBrand>
           <strong className="white-text" onClick={this.clickHandler}>EME</strong>
         </MDBNavbarBrand>
