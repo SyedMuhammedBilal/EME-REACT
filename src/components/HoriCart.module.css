@@ -2,9 +2,13 @@
     background-color: white;
     width: 1200px;
     border: 3px solid #00dbdc;
-    padding: 50px;
+    padding: 40px;
     margin: 20px;
+    padding-right: 0px;
     border-radius: 35px;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
   }
 
   .container {
@@ -12,6 +16,10 @@
     text-align: center;
     color: white;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    top: 30px;
   }
 
 .pic1 {
@@ -19,14 +27,41 @@
     /*padding-right: 960px;*/
     display: flexbox;
     justify-content: space-around;
-    display: ;
+    
 }
 .column {
     float: left;
-    width: 23.33%;
-    padding: 5px;
+    width: 24.66%;
+    padding: 0px;
+    flex: 1 0 23%;
+    border-right: .3px solid #00dbdc;
+    
   }
 
 img {
     filter: opacity(0.5) drop-shadow(0 0 0 #e6e7e7);
+}
+
+@media (max-width: 991px) {
+    .column {
+        float: left;
+        width: 24.66%;
+        padding: 30px;
+        flex: 1 0 50%;  
+    }
+}
+
+@media (max-width: 700px) {
+    .column {
+        float: left;
+        width: 24.66%;
+        padding: 30px;
+        flex: 1 0 70%;
+    }
+}
+
+
+.des {
+    color: rgb(136, 136, 136);
+    
 }

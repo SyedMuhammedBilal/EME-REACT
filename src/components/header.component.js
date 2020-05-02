@@ -27,7 +27,8 @@ class Header extends Component {
                         height: '530px',
                         /*filter: 'blur(2px)',
                         webkitFilter: 'blur(2px)',*/  
-                        filter: 'brightness(60%)'
+                        filter: 'brightness(60%)',
+                        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.15)'
                         
                     }} />
                     <button onClick={this.clickHandler} className={Styles.btn}>Shop Now</button>
@@ -36,7 +37,7 @@ class Header extends Component {
                             fontSize: '85px',
                             fontWeight: '500',
                             marginTop: '-80px',
-                            fontFamily: 'Copperplate'
+                            fontFamily: 'Copperplate',
                         }}>
                             {this.state.MainName}
                         </h1>
@@ -48,7 +49,6 @@ class Header extends Component {
                         </span>
                     </div>
                 </div>
-
             </div>
         );
     }
