@@ -12,7 +12,7 @@
 
 .container .btn {
   position: absolute;
-  top: 68%;
+  top: 75%;
   left: 28.5%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -46,7 +46,22 @@
 }
 
 @media (max-width: 900px) {
+  p {
+    font-size: 18px !important;
+    text-align: center !important;
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: 900px) {
   .centered {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 486px) {
+  .btn {
+    margin-top: 60px;
+    margin-left: 17px;
   }
 }

@@ -59,14 +59,14 @@ class HoriCard extends Component {
                         <p></p>
                         <span style={{
                             color: 'black',
-                            fontWeight: '400px'
+                            fontWeight: '400%'
                         }}>{this.state.name4}</span>
                         <p></p>
                         <span className={Styles.des}>{desc1}</span>
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

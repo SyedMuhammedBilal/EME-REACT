@@ -26,9 +26,9 @@ clickHandler() {
 render() {
   return (
     <Router>
-      <MDBNavbar className={Styles.Horizon} dark expand="md">
+      <MDBNavbar className={Styles.Horizon} sticky={'top'} dark expand="md">
         <MDBNavbarBrand>
-          <strong className="white-text" onClick={this.clickHandler}>EME</strong>
+          <strong className="white-text" onClick={this.clickHandler}><i>EME</i></strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>

@@ -3,7 +3,7 @@
     width: 1200px;
     border: 3px solid #00dbdc;
     padding: 40px;
-    margin: 20px;
+    margin: 40px;
     padding-right: 0px;
     border-radius: 35px;
     display: flex;
@@ -19,7 +19,7 @@
     flex-direction: row;
     justify-content: space-around;
     flex-flow: wrap;
-    top: 30px;
+    top: 60px;
   }
 
 .pic1 {

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router,
 Switch, Link } from 'react-router-dom'
 import Route from 'react-router-dom/Route';
+import { TweenMax, Power3 } from 'gsap';
 
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';

@@ -41,12 +41,14 @@ class Header extends Component {
                         }}>
                             {this.state.MainName}
                         </h1>
+                        <p>Electro Medical Enterprises</p>
+                        {/*<p>EME is serving their services since 2000</p>*/}
                         <span style={{
                             fontSize: '30px',
                             fontFamily: 'Geneva'
-                        }}>
+                        }}><b>
                             {this.state.Slogan}
-                        </span>
+                        </b></span>
                     </div>
                 </div>
             </div>
