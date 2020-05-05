@@ -8,6 +8,7 @@ import Header from '../components/header.component'
 import HoriCard from '../components/HoriCard.component'
 import Section from '../components/Section.component'
 import SecSection from '../components/SecSection.component'
+import Info from '../components/Info.component'
 
 class Home extends Component {
 
@@ -33,6 +34,9 @@ class Home extends Component {
                 </div>
                 <div data-aos='fade-up'>
                     <SecSection />
+                </div>
+                <div>
+                    <Info />
                 </div>
             </Fragment>
         )
