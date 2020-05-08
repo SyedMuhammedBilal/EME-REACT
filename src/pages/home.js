@@ -1,5 +1,4 @@
-import React, { Fragment, useEffect, Component } from 'react'
-import { TweenMax, Power3 } from 'gsap';
+import React, { Fragment, Component } from 'react'
 import AOS from 'aos';
 import "aos/dist/aos.css"
 
@@ -9,12 +8,10 @@ import HoriCard from '../components/HoriCard.component'
 import Section from '../components/Section.component'
 import SecSection from '../components/SecSection.component'
 import Info from '../components/Info.component'
+import Footer from '../components/Footer.component'
 
 class Home extends Component {
 
-    constructor(props) {
-        super(props);
-    }
     componentDidMount(){
         AOS.init({
             duration : 3000
@@ -38,6 +35,7 @@ class Home extends Component {
                 <div>
                     <Info />
                 </div>
+                <Footer />
             </Fragment>
         )
     }
