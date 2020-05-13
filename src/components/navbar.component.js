@@ -5,7 +5,8 @@ import { MDBNavbar,
       MDBNavbarNav, MDBNavItem,
        MDBNavLink, MDBNavbarToggler,
         MDBCollapse, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Styles from './nav.module.css'
 
 
@@ -25,16 +26,15 @@ clickHandler() {
 
 render() {
   return (
-    <Router>
       <MDBNavbar className={Styles.Horizon} sticky={'top'} dark expand="md">
         <MDBNavbarBrand>
-          <strong className="white-text" onClick={this.clickHandler}><i>EME</i></strong>
+          <strong className="white-text" onClick={this.clickHandler}>EME</strong>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav center>
             <MDBNavItem active>
-              <MDBNavLink to="#!" onClick={this.clickHandler}>Home</MDBNavLink>
+              <MDBNavLink to="/" onClick={this.clickHandler}>Home</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="#!" onClick={this.clickHandler}>Features</MDBNavLink>
@@ -43,7 +43,7 @@ render() {
               <MDBNavLink to="#!" onClick={this.clickHandler}>Pricing</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
-              <MDBNavLink to="#!" onClick={this.clickHandler}>About</MDBNavLink>
+              <MDBNavLink to="/about" onClick={this.clickHandler}>About</MDBNavLink>
             </MDBNavItem>
             {/*<MDBNavItem>
               <MDBNavLink to="#!">Machines</MDBNavLink>
@@ -102,7 +102,6 @@ render() {
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>
-    </Router>
     );
   }
 }
