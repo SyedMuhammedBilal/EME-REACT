@@ -9,6 +9,7 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import Home from './pages/home'
 import About from './pages/About'
+import Contact from './pages/ContactForm'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' exact component={About} />
+        <Route path='/contact' exact component={Contact} />
       </Switch>
     </Router>
   );
