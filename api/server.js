@@ -10,7 +10,7 @@ var transport = {
     port: 587,
     auth: {
     user: creds.USER,
-    pass: creds.PASS
+    pass: process.env.PASS
   }
 }
 
