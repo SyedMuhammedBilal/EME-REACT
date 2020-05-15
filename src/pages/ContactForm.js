@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import axios from 'axios';
+import AOS from 'aos';
 
 import Styles from '../components/Form.module.css'
 import NavbarPage from '../components/navbar.component'
@@ -18,8 +19,25 @@ class ContactForm extends Component {
 
         this.onEmailChange = this.onEmailChange.bind(this)
         this.onMessageChange = this.onMessageChange.bind(this)
-        this.resetForm = this.resetForm.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+       
     }
+    
+    handleSubmit(e){
+        e.preventDefault();
+        axios({
+          method: "POST", 
+          url:"http://localhost:5000/send", 
+          data:  this.state
+        }).then((response)=>{
+          if (response.data.status === 'success'){
+            alert("Message Sent Successfully!."); 
+            this.resetForm()
+          } else if(response.data.status === 'fail'){
+            alert("Message failed to send.")
+          }
+        })
+      }
     
     onNameChange = (event) => {
         const { name, value } = event.target
@@ -40,12 +58,21 @@ class ContactForm extends Component {
         })
     }
 
+    componentDidMount(){
+        AOS.init({
+            duration : 3000
+        })
+    }
 
     render() {
         return (
             <Fragment>
                 <NavbarPage/>
-                    <form>
+                    <div className={Styles.heading}>
+                        <h1 className={Styles.H}>Have any Questions?</h1>
+                    </div>
+                    <div data-aos="fade-left">
+                    <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
                         <div className={Styles.contact_us}>
                             <div className={Styles.title}>
                                 <h1 className={Styles.h}>Contact us</h1>
@@ -84,35 +111,36 @@ class ContactForm extends Component {
                                     />
                                 </div>  
                             </div>
-                            <div className={Styles.btn}>
+                            <button className={Styles.btn}>
                                 Submit
                                 <i className={Styles.fas}></i>
-                            </div>
+                            </button>
                             <div className={Styles.social_icons}>
+                                <div className="instagram">
+                                <i className="fab fa-instagram"></i>
+                                </div>
                                 <div className="facebook">
                                 <i className="fab fa-facebook-f"></i>
                                 </div>
-                                <div className="twitter">
-                                <i className="fab fa-twitter"></i>
-                                </div>
-                                <div className="google">
-                                <i className="fab fa-google-plus-g"></i>
+                                <div className="whatsapp">
+                                <i className="fab fa-whatsapp"></i>
                                 </div>
                             </div>
                         </div>
                     </form>
+                    </div>
                 <Footer/>
             </Fragment>
         )
     }
 
-    resetForm() {
+    resetForm(){
         this.setState({
-            name: '',
-            email: '',
+            name: '', 
+            email: '', 
             message: ''
         })
-    }
+    };
 
 }
 

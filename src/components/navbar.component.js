@@ -5,8 +5,7 @@ import { MDBNavbar,
       MDBNavbarNav, MDBNavItem,
        MDBNavLink, MDBNavbarToggler,
         MDBCollapse, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon } from "mdbreact";
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+
 import Styles from './nav.module.css'
 
 
@@ -49,7 +48,7 @@ render() {
               <MDBNavLink to="#!">Machines</MDBNavLink>
             </MDBNavItem>*/}
             <MDBNavItem>
-              <MDBNavLink to="#!" onClick={this.clickHandler}>Contact</MDBNavLink>
+              <MDBNavLink to="/contact" onClick={this.clickHandler}>Contact</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBDropdown>

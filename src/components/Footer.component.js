@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter,  MDBNavItem,
+import { MDBCol, MDBContainer, MDBRow, MDBFooter, 
     MDBNavLink, MDBIcon } from "mdbreact";
 
 import Styles from './footer.module.css'
