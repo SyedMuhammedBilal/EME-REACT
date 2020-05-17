@@ -18,7 +18,9 @@ class About extends Component {
         return (
             <Fragment>
                 <NavbarPage />
-                <AboutHeader />
+                <div data-aos="fade-up">
+                    <AboutHeader />
+                </div>
                 <div data-aos='fade-left'>
                     <AboutInfo />
                 </div>

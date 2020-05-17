@@ -68,7 +68,7 @@ class ContactForm extends Component {
         return (
             <Fragment>
                 <NavbarPage/>
-                    <div className={Styles.heading}>
+                    <div className={Styles.heading} data-aos="fade-up">
                         <h1 className={Styles.H}>Have any Questions?</h1>
                     </div>
                     <div data-aos="fade-left">

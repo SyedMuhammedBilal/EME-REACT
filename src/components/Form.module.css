@@ -8,10 +8,11 @@
   width: 350px;
   background: #fff;
   padding: 50px;
-  margin: 70px auto;
+  margin: 50px auto;
   border-radius: 30px;
   position: relative;
 }
+
 
 .title .h{
   color: #39393a;
@@ -20,11 +21,14 @@
   text-align: center;
 }
 
-.heading {
-  color: #39393a;
+.heading .H {
+  font-weight: 400;
   letter-spacing: 5px;
   margin-top: 6%;
   text-align: center;
+  background: linear-gradient(to right, #0d469b, #46379d, #8e00b9, #e10055, #eb2212);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .form,

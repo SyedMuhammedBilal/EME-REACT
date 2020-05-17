@@ -1,96 +1,71 @@
+.sec {
+  background: linear-gradient(to right bottom, #ea4492, #a24393, #5c3e7f, #21305a, #041b2d);
+  padding: 43px;
+  box-shadow: 0 15px 32px 0 rgb(41, 18, 33), 0 -10px 55px 0 rgb(124, 23, 90);
+  height: 450px;  
+}
+
 .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    display: flex;
-  }
-
-.container img {
-  width: 100%;
-  height: auto;
-}
-
-.container .btn {
-  position: absolute;
-  top: 75%;
-  left: 28.5%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-    ;
+  position: relative;
+  text-align: center;
   color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 5px 10px 0 rgba(0, 0, 0, 0.16);
-}
-  
-  /* Centered text */
-  .centered {
-    position: absolute;
-    font-weight: 500;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: row;
-    display: grid;
-  }
-
-  .line {
-      position: relative;
-      font-size: 25px;
-  }
-
-  .line:before {
-    content: '';
-    display: block;
-    width: 93px;
-    height: 2px;
-    background: white;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: -2;
-  }
-
-  .line:after {
-    content: '';
-    display: block;
-    width: 93px;
-    height: 2px;
-    background: white;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    z-index: -2;
-  }
-
-@media (max-width: 900px) {
-  span {
-    font-size: 23px !important;
-    text-align: center !important;
-    padding-left: 28px;
-  }
+  top: 0px;
 }
 
-@media (max-width: 900px) {
-  p {
-    font-size: 18px !important;
-    text-align: center !important;
-    padding-left: 28px;
-  }
+/*.head {
+  text-align: left;
+  margin-left: 4%;
+  padding-top: 50px;
+}*/
+
+.heading {
+  font-size: 65px;
+  margin-top: 120px;
+  text-align: center;
+  font-weight: 450;
 }
 
-@media (max-width: 900px) {
-  .centered {
-    font-size: 20px;
-  }
+.slogan {
+  font-weight: 500;
+  font-size: 21px;
 }
 
 @media (max-width: 486px) {
-  .btn {
-    margin-top: 60px;
-    margin-left: 17px;
+  .heading {
+      font-size: 40px;
+      text-align: center;
+      font-weight: 450;
   }
+}
+
+.para {
+  text-align: left;
+  margin-left: 3%;
+  padding-top: 30px;
+}
+
+.typography {
+  font-size: 21px;
+  margin-bottom: 20px;
+  line-height: 1.38105;
+  font-weight: 400;
+  letter-spacing: .011em;
+}
+
+@media (max-width: 486px) {
+  .typography {
+      font-size: 21px;
+      margin-bottom: 20px;
+      line-height: 1.38105;
+      margin-right: 20px;
+      font-weight: 400;
+      letter-spacing: .011em;
+  }
+}
+
+.large {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  float: none;
 }
