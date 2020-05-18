@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ProductsList from '../components/ProductsList.component'
 import Navbar from '../components/navbar.component'
+import Footer from '../components/Footer.component'
 
 export class Products extends Component {
     render() {
@@ -8,6 +9,7 @@ export class Products extends Component {
             <div>
                 <Navbar />
                 <ProductsList />
+                <Footer />
             </div>
         )
     }
