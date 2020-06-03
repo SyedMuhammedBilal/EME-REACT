@@ -1,4 +1,4 @@
-## Offical `EME` Project
+## OFFICAL `EME` PROJECT  
 
 ## Available Scripts
 
